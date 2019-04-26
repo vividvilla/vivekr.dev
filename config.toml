@@ -1,0 +1,53 @@
+baseURL = "https://vivekr.dev"
+languageCode = "en-us"
+title = "Vivek R"
+theme = "ezhil"
+
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = "UA-123-45"
+disqusShortname = "localhost"
+
+[params]
+	subtitle = "Full Stack Developer, building fintech tools [@zerodha](https://zerodha.com)"
+	# Number of posts to show in recent posts list.
+	recentPostsCount = 10
+	# Content types which are excluded from recent posts and archive page.
+	excludedTypes = ["page"]
+	disableDisqusTypes = ["page"]
+	featherIconsCDN = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/vividvilla"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/vividvilla"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+tag = "tags"
