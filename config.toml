@@ -7,7 +7,7 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-19841405-18"
 disqusShortname = "vivekrdev"
 
 [params]
