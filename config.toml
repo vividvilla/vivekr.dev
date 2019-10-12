@@ -33,6 +33,11 @@ name = "Tags"
 url = "/tags"
 weight = 4
 
+[[menu.main]]
+name = "Projects"
+url = "https://github.com/vividvilla?utf8=%E2%9C%93&tab=repositories&q=&type=source"
+weight = 5
+
 [[params.social]]
 name = "Github"
 icon = "github"
