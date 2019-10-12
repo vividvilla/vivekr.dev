@@ -2,6 +2,7 @@ baseURL = "https://vivekr.dev"
 languageCode = "en-us"
 title = "Vivek R"
 theme = "ezhil"
+paginate = 7
 
 pygmentsstyle = "vs"
 pygmentscodefences = true
@@ -12,12 +13,10 @@ disqusShortname = "vivekrdev"
 
 [params]
 	subtitle = "Full Stack Developer, building fintech tools [@zerodha](https://zerodha.com)"
-	# Number of posts to show in recent posts list.
-	recentPostsCount = 10
-	# Content types which are excluded from recent posts and archive page.
-	excludedTypes = ["page"]
+	mainSections = ["posts"]
 	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
+	mode = "auto"
 
 [[menu.main]]
 name = "Home"
