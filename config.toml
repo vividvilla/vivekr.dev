@@ -4,7 +4,7 @@ title = "Vivek R"
 theme = "ezhil"
 paginate = 7
 
-pygmentsstyle = "vs"
+pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
@@ -17,6 +17,7 @@ disqusShortname = "vivekrdev"
 	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
 	mode = "auto"
+        customCSS = "css/custom.css"
 
 [[menu.main]]
 name = "Home"
