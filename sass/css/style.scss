@@ -259,6 +259,10 @@ pre.z-code {
 }
 
 @media (max-device-width: 699px) {
+  body {
+    padding: 20px;
+  }
+
   .intro {
     grid-template-columns: 1fr;
 
