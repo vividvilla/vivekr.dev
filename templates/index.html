@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main">
+  <section class="intro">
+    <div class="intro-left">
+      <h2>Vivek R</h2>
+      <p>
+        I am a full stack developer responsible for designing and building fintech software at <a target="_blank" rel="noopener noreferrer" href="https://zerodha.com/products/">Zerodha</a>.
+        <br><br>
+        I occasionally build some <a href="#projects">open-source software</a> for myself, casual gamer and an avid football fan. This is the space where I share my views, notes and ideas.
+      </p>
+    </div>
+    <div class="intro-right">
+      <img class="intro-image" src="/img/thinker.png" alt="Vivek R">
+    </div>
+  </section>
+  <section class="section-posts">
+    <div class="intro-left">
+      <h2>Writing</h2>
+      <p>I don't write as much as I would like to but here is the list of some recent posts.</p>
+      <ul class="posts-list">
+        {% set s = get_section(path="posts/_index.md") %}
+        {% for page in s.pages | reverse | slice(end=5) %}
+        <li>
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
+            <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+        </li>
+        {% endfor %}
+        {% if s.pages | length > 5 %}
+        <li>
+          <a href="/posts/">Other posts</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </section>
+  <section class="section-projects">
+    <div class="intro-left">
+      <h2 id="projects">Projects</h2>
+      <p>Some of the personal projects I have worked on. You can find more on <a target="_blank" rel="noopener noreferrer" href="https://github.com/vividvilla">Github</a>.</p>
+      <ul>
+        <li><a href="https://github.com/vividvilla/simplesessions" target="_blank" rel="noopener noreferrer">simplesessions (Go lib)</a></li>
+        <li><a href="https://github.com/vividvilla/ezhil" target="_blank" rel="noopener noreferrer">Ezhil (Hugo theme)</a></li>
+        <li><a href="https://github.com/vividvilla/csvtotable" target="_blank" rel="noopener noreferrer">csvtotable (Python utility)</a></li>
+        <li><a href="https://github.com/vividvilla/consul-cfg" target="_blank" rel="noopener noreferrer">consul-cfg (Go utility)</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="section-contact">
+    <h2 id="projects">Contact</h2>
+    <p>
+      You can find me on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/vividvilla">Twitter</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/vividvilla">Github</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vividvilla/">Linkedin</a> or email at vividvilla at google's email service.
+    </p>
+  </section>
+</div>
+{% endblock content %}
