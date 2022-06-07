@@ -248,6 +248,26 @@ pre.z-code {
   border: 2px solid #f8f8f8;
 }
 
+@media (max-device-width: 1023px) {
+    body {
+      padding: 20px 40px 40px 40px;
+    }
+
+    .container {
+      margin-top: 0;
+    }
+}
+
+@media (max-device-width: 699px) {
+  .intro {
+    grid-template-columns: 1fr;
+
+    .intro-image {
+      display: none;
+    }
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: #c9d1d9;
