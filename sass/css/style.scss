@@ -6,7 +6,8 @@ body {
   font-size: 1.25rem;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: rgba(0, 0, 0, 0.9);
   text-decoration: underline;
   word-break: break-word;
@@ -224,7 +225,8 @@ pre table {
 }
 
 .section-posts,
-.section-projects {
+.section-projects,
+.section-contact {
   margin-top: 40px;
 }
 
@@ -261,6 +263,19 @@ pre.z-code {
 @media (max-device-width: 699px) {
   body {
     padding: 20px;
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
   }
 
   .intro {
@@ -269,6 +284,12 @@ pre.z-code {
     .intro-image {
       display: none;
     }
+  }
+
+  .section-posts,
+  .section-projects,
+  .section-contact {
+    margin-top: 20px;
   }
 }
 
